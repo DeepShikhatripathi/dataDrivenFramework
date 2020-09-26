@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [GoibiboSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Goibibo">
+    <groups>
+      <define name="All">
+        <include name="smoke"/>
+        <include name="regration"/>
+      </define> <!-- All -->
+      <run>
+        <include name="All"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.goibibo.testScripts.TC003"/>
+      <class name="com.goibibo.testScripts.TC004"/>
+      <class name="com.goibibo.testScripts.TC001"/>
+      <class name="com.goibibo.testScripts.TC002"/>
+    </classes>
+  </test> <!-- Goibibo -->
+  <test parallel="tests" name="Goibibo(failed)">
+    <groups>
+      <run>
+        <include name="All"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.goibibo.testScripts.TC003">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.goibibo.testScripts.TC003 -->
+      <class name="com.goibibo.testScripts.TC004">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.goibibo.testScripts.TC004 -->
+      <class name="com.goibibo.testScripts.TC002">
+        <methods>
+          <include name="userIsAbleToIntractWithElements"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.goibibo.testScripts.TC002 -->
+      <class name="com.goibibo.testScripts.TC001">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.goibibo.testScripts.TC001 -->
+    </classes>
+  </test> <!-- Goibibo(failed) -->
+</suite> <!-- Failed suite [GoibiboSuite] -->

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-GoibiboSuite" class="navigator-link">
+              <span class="suite-name border-failed">GoibiboSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-GoibiboSuite" class="navigator-link ">
+                    <span>D:\java\new batch\DataDrivenFrameWork\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-GoibiboSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-GoibiboSuite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-GoibiboSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-GoibiboSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-GoibiboSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-GoibiboSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-GoibiboSuite" class="hide-methods failed suite-GoibiboSuite"> (hide)</a> <!-- hide-methods failed suite-GoibiboSuite -->
+                      <a href="#" panel-name="suite-GoibiboSuite" class="show-methods failed suite-GoibiboSuite"> (show)</a> <!-- show-methods failed suite-GoibiboSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-GoibiboSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GoibiboSuite" title="com.goibibo.testScripts.TC002" class="method navigator-link" hash-for-method="userIsAbleToIntractWithElements">userIsAbleToIntractWithElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-GoibiboSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-GoibiboSuite" class="hide-methods passed suite-GoibiboSuite"> (hide)</a> <!-- hide-methods passed suite-GoibiboSuite -->
+                      <a href="#" panel-name="suite-GoibiboSuite" class="show-methods passed suite-GoibiboSuite"> (show)</a> <!-- show-methods passed suite-GoibiboSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-GoibiboSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GoibiboSuite" title="com.goibibo.testScripts.TC001" class="method navigator-link" hash-for-method="defaulPageIsFlightSearch">defaulPageIsFlightSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GoibiboSuite" title="com.goibibo.testScripts.TC004" class="method navigator-link" hash-for-method="roundTripFlightSearch">roundTripFlightSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GoibiboSuite" title="com.goibibo.testScripts.TC003" class="method navigator-link" hash-for-method="searchReturnsNoResults">searchReturnsNoResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GoibiboSuite" title="com.goibibo.testScripts.TC004" class="method navigator-link" hash-for-method="selectFlights">selectFlights</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-GoibiboSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-GoibiboSuite" class="panel GoibiboSuite">
+          <div class="suite-GoibiboSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.goibibo.testScripts.TC002</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userIsAbleToIntractWithElements">
+                  </a> <!-- userIsAbleToIntractWithElements -->
+                  <span class="method-name">userIsAbleToIntractWithElements</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.goibibo.testScripts.TC002.userIsAbleToIntractWithElements(TC002.java:33)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GoibiboSuite-class-failed -->
+          <div class="suite-GoibiboSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.goibibo.testScripts.TC003</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchReturnsNoResults">
+                  </a> <!-- searchReturnsNoResults -->
+                  <span class="method-name">searchReturnsNoResults</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GoibiboSuite-class-passed -->
+          <div class="suite-GoibiboSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.goibibo.testScripts.TC004</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="roundTripFlightSearch">
+                  </a> <!-- roundTripFlightSearch -->
+                  <span class="method-name">roundTripFlightSearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectFlights">
+                  </a> <!-- selectFlights -->
+                  <span class="method-name">selectFlights</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GoibiboSuite-class-passed -->
+          <div class="suite-GoibiboSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.goibibo.testScripts.TC001</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="defaulPageIsFlightSearch">
+                  </a> <!-- defaulPageIsFlightSearch -->
+                  <span class="method-name">defaulPageIsFlightSearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GoibiboSuite-class-passed -->
+        </div> <!-- panel GoibiboSuite -->
+        <div panel-name="test-xml-GoibiboSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\java\new batch\DataDrivenFrameWork\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;GoibiboSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Goibibo&quot;&gt;
+    &lt;groups&gt;
+      &lt;define name=&quot;All&quot;&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+        &lt;include name=&quot;regration&quot;/&gt;
+      &lt;/define&gt; &lt;!-- All --&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;All&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.goibibo.testScripts.TC003&quot;/&gt;
+      &lt;class name=&quot;com.goibibo.testScripts.TC004&quot;/&gt;
+      &lt;class name=&quot;com.goibibo.testScripts.TC001&quot;/&gt;
+      &lt;class name=&quot;com.goibibo.testScripts.TC002&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Goibibo --&gt;
+&lt;/suite&gt; &lt;!-- GoibiboSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-GoibiboSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for GoibiboSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Goibibo (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-GoibiboSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for GoibiboSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regration</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">defaulPageIsFlightSearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">roundTripFlightSearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">selectFlights</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">userIsAbleToIntractWithElements</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">defaulPageIsFlightSearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchReturnsNoResults</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-GoibiboSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for GoibiboSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_GoibiboSuite');
+function tableData_GoibiboSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'userIsAbleToIntractWithElements')
+data.setCell(0, 2, 'com.goibibo.testScripts.TC002')
+data.setCell(0, 3, 17555);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'roundTripFlightSearch')
+data.setCell(1, 2, 'com.goibibo.testScripts.TC004')
+data.setCell(1, 3, 16968);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'searchReturnsNoResults')
+data.setCell(2, 2, 'com.goibibo.testScripts.TC003')
+data.setCell(2, 3, 16482);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'selectFlights')
+data.setCell(3, 2, 'com.goibibo.testScripts.TC004')
+data.setCell(3, 3, 11107);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'defaulPageIsFlightSearch')
+data.setCell(4, 2, 'com.goibibo.testScripts.TC001')
+data.setCell(4, 3, 39);
+window.suiteTableData['GoibiboSuite']= { tableData: data, tableDiv: 'times-div-GoibiboSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-GoibiboSuite">
+              </div> <!-- times-div-GoibiboSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-GoibiboSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for GoibiboSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-GoibiboSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-GoibiboSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.goibibo.testScripts.TC003</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchReturnsNoResults</span>
+                <span class="method-start">11988 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=searchReturnsNoResults status=SUCCESS method=TC003.searchReturnsNoResults()[pri:0, ...)</span>
+                <span class="method-start">28475 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.goibibo.testScripts.TC001</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">32821 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">defaulPageIsFlightSearch</span>
+                <span class="method-start">43402 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=defaulPageIsFlightSearch status=SUCCESS method=TC001.defaulPageIsFlightSearch()[pri...)</span>
+                <span class="method-start">43442 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.goibibo.testScripts.TC002</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">47835 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">userIsAbleToIntractWithElements</span>
+                <span class="method-start">58953 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=userIsAbleToIntractWithElements status=FAILURE method=TC002.userIsAbleToIntractWith...)</span>
+                <span class="method-start">76517 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.goibibo.testScripts.TC004</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">81697 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">roundTripFlightSearch</span>
+                <span class="method-start">91479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectFlights</span>
+                <span class="method-start">108451 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">119559 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
